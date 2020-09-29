@@ -24,4 +24,4 @@ aCar.color = {
     }
 
 };
-console.log("It is a "+ aCar.color.exteriorColor + " car, "+ aCar.mileage+ "mileage, with "+ aCar.color.interiorFabric.texture+" interior.");
+console.log("It is a "+ aCar.color.exteriorColor + " car, "+ aCar.mileage+ " mileage, with "+ aCar.color.interiorFabric.texture+" interior.");
