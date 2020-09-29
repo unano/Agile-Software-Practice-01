@@ -33,4 +33,5 @@ aCar.color = {
 console.log("It is a "+ aCar.color.exteriorColor + " car, "+ 
              aCar.mileage+ " mileage, with "+ 
              aCar.color.interiorFabric.texture+" interior.");
-console.log('First owner : ' + aCar.previous_owners[0].name + aCar.previous_owners[0].address);
+console.log('First owner : ' + aCar.previous_owners[0].name + "-" + 
+             aCar.previous_owners[0].address);
