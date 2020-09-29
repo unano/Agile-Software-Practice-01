@@ -19,9 +19,9 @@ aCar.mileage = 10000;
 aCar.color = {
     exteriorColor : "red",
     interiorFabric :{
-        texture : leather,
-        shade : cream
+        texture : "leather",
+        shade : "cream"
     }
 
 };
-console.log("It is a "+ aCar.color.exteriorColor + " car, "+ aCar.mileage+ "mileage, with "+ aCar.color.interiorFabric.texture +" interior.");
+console.log("It is a "+ aCar.color.exteriorColor + " car, "+ aCar.mileage+ "mileage, with "+ aCar.color.interiorFabric.texture+" interior.");
