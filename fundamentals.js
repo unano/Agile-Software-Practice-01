@@ -1,5 +1,9 @@
 const aCar = {
     owner : "Joe Bloggs",
+    previous_owners: [
+        {name: "Pat Smith", address:  "1 Main Street"},
+        {name: "Sheila Dwyer", address:  "2 High Street"}
+      ],
     type : {
         make : "Toyota",
         nodel : "Corolla",
@@ -14,7 +18,9 @@ const aCar = {
 
 console.log(aCar.owner);
 console.log(aCar.owner + ' drives a ' + aCar.type.make);
-console.log('Reg. = '+aCar.registration.year + '-' + aCar.registration.countryCode+ '-' +aCar.registration.number);
+console.log('Reg. = '+aCar.registration.year + '-' + 
+             aCar.registration.countryCode+ '-' + 
+             aCar.registration.number);
 aCar.mileage = 10000;
 aCar.color = {
     exteriorColor : "red",
@@ -24,4 +30,7 @@ aCar.color = {
     }
 
 };
-console.log("It is a "+ aCar.color.exteriorColor + " car, "+ aCar.mileage+ " mileage, with "+ aCar.color.interiorFabric.texture+" interior.");
+console.log("It is a "+ aCar.color.exteriorColor + " car, "+ 
+             aCar.mileage+ " mileage, with "+ 
+             aCar.color.interiorFabric.texture+" interior.");
+console.log('First owner : ' + aCar.previous_owners[0].name + aCar.previous_owners[0].address);
